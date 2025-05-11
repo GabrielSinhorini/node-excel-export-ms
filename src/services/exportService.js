@@ -8,11 +8,11 @@ async function exportDataToExcel() {
   const sheet = workbook.addWorksheet('Usuários');
 
   sheet.columns = [
-    { header: 'Data',        key: 'transaction_date',        width: 10 },
-    { header: 'Descrição',      key: 'description',      width: 30 },
-    { header: 'Valor',     key: 'amount',     width: 30 },
+    { header: 'Data',              key: 'transaction_date',        width: 10 },
+    { header: 'Descrição',         key: 'description',      width: 30 },
+    { header: 'Valor',             key: 'amount',     width: 30 },
     { header: 'Tipo da Transação', key: 'transaction_type', width: 20 },
-    { header: 'Status', key: 'status', width: 20 },
+    { header: 'Status',            key: 'status', width: 20 },
   ];
 
   rows.forEach(row => sheet.addRow(row));
